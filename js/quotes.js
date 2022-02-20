@@ -45,13 +45,10 @@ const quotesArr = [
   },
 ];
 
-const quote = document.querySelector(".quote span:first-child"); // 명언을 넣을 공간
-const author = document.querySelector(".quote span:last-child"); // 명언을 한 사람의 이름을 넣을 공간
+const quote = document.querySelector(".quote span:first-child");
+const author = document.querySelector(".quote span:last-child");
 
-const todayQuote = quotesArr[Math.floor(Math.random() * quotesArr.length)]; // 사이트를 킬 때마다 랜덤으로 명언과 사람 이름을 보여줌
-//단 랜덤 함수를 돌릴 때, 완벽한 정수가 아니므로 floor 함수(숫자를 내림 ex. 1.5 > 1)를 사용하여 쓸 것
-// 랜덤으로 돌릴 때, 명언의 개수만큼 돌리기 위해, 명언의 개수를 세야됨.
+const todayQuote = quotesArr[Math.floor(Math.random() * quotesArr.length)];
 
 quote.innerText = todayQuote.quotes;
 author.innerText = todayQuote.author;
-//html 안에 넣어주기.
