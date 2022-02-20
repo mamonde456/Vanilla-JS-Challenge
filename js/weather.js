@@ -17,7 +17,7 @@ function onGe0k(position) {
 }
 
 function onGeoError() {
-  alert("Can't find you. No weaher ");
+  alert("Can't find you. No weaher");
 }
 
 navigator.geolocation.getCurrentPosition(onGe0k, onGeoError);
